@@ -1,0 +1,142 @@
+body{
+    font-family: "Maven Pro", serif;
+    font-style: normal;
+}
+
+.header{
+    background-color: #2A2A2A;
+    display: flex;
+    justify-content: space-evenly ;
+    padding: 20px;
+    align-items: center;
+}
+.header img{
+    align-items: flex-end;
+}
+
+.header-ul a{
+    text-decoration: none;
+    color: #FED001;
+    padding: 10px;
+    border: 1px solid #FED001;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 16px;
+}
+
+.content-main{
+    display: flex;
+    align-items: center ;
+    justify-content: space-evenly;
+    background: linear-gradient(to top, #FED001, white);
+    padding-left: 16px;
+}
+
+.content-main-title{
+    font-size: 68px;
+    width: 557px;
+    flex-grow: 2;
+    margin-left: 30px;
+}
+
+
+.button-saiba{
+    text-decoration: none;
+    background-color: 
+    #FED001;
+    font-size: 18px;
+    color: #2A2A2A;
+    padding: 10px 20px;
+    border: 1px solid #2A2A2A;
+    border-radius: 2px;
+    text-align: center;
+    margin-left: 30px;
+}
+
+.article-div1 h2{
+    text-align: center;
+    font-size: 40px;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+.article-cards{
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-radius: 6px;
+}
+
+.img-cards img{
+    width: 420px;
+    height: 210px;
+    border-radius: 6px;
+}
+
+.article-cards h3{
+    font-size: 24px;
+}
+
+.butto-vermais{ 
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+    background-color: #FED001;
+    padding: 16px;
+    width: 240px;
+    justify-content: center;
+    align-content: center;
+    border-radius: 10px;
+    color: #2A2A2A;
+    text-transform: uppercase;
+}
+
+.butao{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.nossa-escola{
+    background-color: #003464;
+    color: white;
+    display: flex;
+}
+.nossa-escola img{
+    
+}
+.nossa-escola h2{
+    font-size: 40px;
+}
+
+.nossa-escola p{
+    font-size: 18px;
+}
+.contato{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+.contato h2{
+    text-align: center;
+    font-size: 40px;
+}
+.contato p{
+    text-align: center;
+}
+.contato img{
+    width: 1276px;
+    height: 525px;
+}
+
+footer{
+    text-align: center;
+    background-color: #2A2A2A;
+    padding: 20px;
+    color: white;
+}

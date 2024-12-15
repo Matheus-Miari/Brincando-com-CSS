@@ -1,0 +1,169 @@
+/* Configurações gerais */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+.space-bg {
+    background: url('https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1rem 2rem;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1dbf73;
+}
+
+.cta-button {
+    text-decoration: none;
+    padding: 0.7rem 1.5rem;
+    background: #1dbf73;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #16a862;
+}
+
+/* Conteúdo principal */
+.main-content h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.explore-btn {
+    text-decoration: none;
+    padding: 1rem 2rem;
+    background: #1dbf73;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    transition: background 0.3s;
+}
+
+.explore-btn:hover {
+    background: #16a862;
+}
+
+/* Seção "Sobre" */
+.about-section {
+    padding: 4rem 2rem;
+    background: #121212;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Funcionalidades */
+.features-section {
+    padding: 4rem 2rem;
+    background: #1a1a1a;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    width: 250px;
+    transition: transform 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.feature-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+.footer {
+    padding: 2rem;
+    background: #101010;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer p {
+    font-size: 1rem;
+}

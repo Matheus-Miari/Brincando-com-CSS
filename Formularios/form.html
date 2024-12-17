@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: #004d49;
+            
+        }
+        form{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 100vh;
+            min-height: 100vh;
+        }
+        fieldset{
+            border-radius: 10px;
+            color: white;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            border: 3px  solid white;
+            box-shadow: 2px 6px 10px black;
+        }
+        legend{
+            padding: 10px;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: #ffffff;
+            color: #004d49;
+            font-weight: bold;
+            text-transform: uppercase;
+            box-shadow: 0px 4px 2px black;
+        }
+
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            margin: 20px;
+            width: 20em;
+        }
+        .enviar{
+            background-color: #004d49;
+            color: white;
+            border: 1px solid #01fff4;
+            font-weight: bold;
+            margin: 10px;
+            width: fit-content;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 10px;
+        }
+
+        label{
+    
+        }
+        .divAti{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn3{
+            
+        }
+        .select{
+            margin: 20px ;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Formulário</legend>
+
+            <input type="email" name="email" placeholder="Email" required autofocus>
+            <label for="filhos"></label>
+            <input type="number" placeholder="Quantidade de filhos" id="filhos" min="0" max="20">
+            <input type="date" name="" id="">
+
+            <div class="divAti">
+                <legend class="ativ">
+                    Atividade Extra:
+                </legend>
+                    <input type="radio" name="atividade" id="" class="btn3">Sim
+                    <input type="radio" name="atividade" id="" class="btn3">Não
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+            
+            <input type="checkbox" name="interesse" value="html">HTML
+            
+            <input type="checkbox"name="interesse" value="css">CSS
+            
+            <input type="checkbox" name="interesse" value="js">JS
+            
+            <input type="checkbox" name="interesse" value="python">Python
+            
+            <select name="linguagem" class="select"> 
+                <optgroup label="Frontend">
+                    <option value="html">Html</option>
+                    <option value="html">Css</option>
+                    <option value="html">Js</option>
+                </optgroup>
+                <optgroup label="Backend">
+                    <option value="html">Python</option>
+                    <option value="html">Go</option>
+                    <option value="html">Java</option>
+                </optgroup>
+                
+            </select>
+            <input type="text"  list="linguagem" id="">
+            <datalist id="linguagem">
+                <option value="HTML"></option>
+                <option value="CSS"></option>
+                <option value="JS"></option>
+            </datalist>
+        </fieldset>
+
+        <input type="submit" value="Enviar" class="btn enviar">
+    </form>
+</body>
+</html>

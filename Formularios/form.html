@@ -76,6 +76,10 @@
             margin: 20px ;
             padding: 10px;
         }
+        
+        textarea{
+            resize: none;
+        }
 
     </style>
 </head>
@@ -128,6 +132,23 @@
                 <option value="JS"></option>
             </datalist>
         </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msd" cols="50" rows="10" maxlength="100" readonly>
+                mensagem
+            </textarea>
+            <input type="checkbox" name="li" id=""> Li e aceito
+<br><br>
+            <input type="search">
+            
+        <input type="range" min="0" max="10" step="2">
+
+        <input type="color">
+
+        </fieldset>
+ 
+
 
         <input type="submit" value="Enviar" class="btn enviar">
     </form>

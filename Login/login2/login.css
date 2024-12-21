@@ -1,0 +1,130 @@
+body{
+    background-color: #9AA6B2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    font-family: "Roboto", serif;
+}
+
+
+fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 560px;
+    min-width: 450px;
+    background-color: #F8FAFC;
+    border: none;
+    box-shadow: -4px 0px 1px rgba(0, 0, 0, 0.3);
+}
+
+.div_main{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+label{
+    color: #BCCCDC;
+    font-weight: 300;
+}
+
+.box{
+    width: 100%;
+    align-self: center;
+    outline: 0;
+    border: none;
+    border-bottom: 2px solid #D9EAFD;
+    background-color: #F8FAFC;
+    padding:  16px 0px 5px ;
+    margin-bottom: 1.5em;
+}
+
+.div_login{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+
+}
+
+#btnLogin{
+    padding: 10px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #9AA6B2;
+    color: #F8FAFC;
+    border: 1px solid #F8FAFC;
+    margin-right: .75em;
+    border-radius: 2px;
+}
+#btnLogin:hover{
+    background-color: #F8FAFC;
+    color: #9AA6B2;
+    border: 1px solid #9AA6B2;
+}
+.cadas:hover{
+    border: 1px solid #9AA6B2;
+}
+h1{
+    color: #9AA6B2;
+    font-weight: 500;
+}
+
+label, input{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+
+}
+
+a{
+    text-decoration: none;
+    color: #9AA6B2;
+
+}
+
+.cadas{
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 0.75em;
+    border-radius: 2px;
+    font-weight: bold;
+    border: 1px solid #F8FAFC;
+}
+
+.esq{
+    font-size: small;
+}
+
+
+/* actions */
+
+.box:invalid:focus{
+    border-bottom: 2px solid red;
+}
+.box:valid:focus{
+    border-bottom: 2px solid green;
+}
+
+.box::placeholder{
+    padding-left: 20px;
+}
+input {
+    padding: 4px;
+    font-size: 10px;
+    border: 2px solid #004d49;
+    border-radius: 5px;
+    outline: none;
+    transition: padding 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus{
+    padding: 10px;
+}

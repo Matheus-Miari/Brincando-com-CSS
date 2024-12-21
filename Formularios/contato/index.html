@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de contato</title>
+    <style>
+        body{
+            background-color: #000000;
+            color: yellow;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            min-width: 100vh;
+            font-family: Arial, Helvetica, sans-serif;
+            text-shadow: 1px 0px 10px black;
+        }
+
+        form{
+            background-color: #353535;
+            border-radius: 10px;
+        }
+
+        fieldset{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+
+        legend{
+            text-transform: uppercase;
+            padding: 16px;
+            font-weight: bolder;
+            font-size: 1.4em;
+        }
+
+        label{
+            align-self: flex-start;
+            padding: 10px;
+        }
+        input{
+            align-self: center;
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #353535;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            outline: 0;
+            color: yellow;
+        }
+
+        #msg{
+            height: 10em;
+            background-color: #353535;
+            border: none;
+            border-bottom: 2px solid #ccc;
+            width: 90%;
+            font-family: sans-serif;
+            padding: 12px;
+            outline: 0;
+            color: yellow;
+        }
+        #btn{
+            background-color: yellow;
+            width: fit-content;
+            margin-top: 20px;
+            align-self: flex-end;
+            border-radius: 10px;
+            padding: 12px;
+            border: 2px solid yellow;
+            color: black;
+            font-weight: bold;
+        }
+
+        /*ACTIONS*/
+        input:invalid:focus, #msg:invalid:focus{
+            border-bottom: 2px solid red;
+        }
+        input:valid:focus, #msg:valid:focus{
+            border-bottom: 2px solid greenyellow;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Formulário de contato</legend>
+            <label for="nome">Seu Nome</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required autofocus id="nome" autocomplete="off">
+            <label for="email">Seu Email</label>
+            <input type="email" name="email" placeholder="Digite um email válido" required id="email" >
+            <label for="assunto">Assunto</label>
+            <input type="text" name="assunto" placeholder="Digite o assunto" maxlength="15" id="assunto" >
+            <label for="msg" >Mensagem</label>
+            <textarea name="msg" id="msg" rows="7" required maxlength="1000" minlength="20" placeholder="Digite sua Mensagem"></textarea>
+            <input type="submit" value="Enviar" id="btn">
+        </fieldset>
+    </form>
+</body>
+</html>

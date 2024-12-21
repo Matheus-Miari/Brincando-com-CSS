@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Enfermagem</title>
+    <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+    <div class="painel-enfermagem">
+        <!-- Cabeçalho do Painel -->
+        <div class="painel-header">
+            <h1>Painel de Enfermagem</h1>
+        </div>
+
+        <!-- Tabelas de Pendências -->
+        <div class="painel-body">
+            <section class="pendencias">
+                <h2>Aguardando Medicação</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Prescrição</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>J.S</td>
+                            <td>LAB - MED</td>
+                            <td class="status em-atendimento">Em Atendimento</td>
+                        </tr>
+                        <tr>
+                            <td>C.D.</td>
+                            <td>MED - Em Medicação</td>
+                            <td class="status aguardando">Aguardando</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="pendencias">
+                <h2>Aguardando Exame</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Prescrição</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>J.S</td>
+                            <td>LAB - AG Coleta</td>
+                            <td class="status aguardando">Aguardando Exame</td>
+                        </tr>
+                        <tr>
+                            <td>M.S.</td>
+                            <td>LAB - AG Resultado</td>
+                            <td class="status aguardando">Aguardando Resultado</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="pendencias">
+                <h2>Aguardando Consulta</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Prescrição</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>L.B.</td>
+                            <td>TC - AG Liberação</td>
+                            <td class="status aguardando">Aguardando Consulta</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <!-- Ações da Enfermagem -->
+            <section class="acoes">
+                <h2>Ações da Enfermagem</h2>
+                <ul>
+                    <li><button class="btn-acao">Iniciar Procedimento: Exame de Sangue</button></li>
+                    <li><button class="btn-acao">Iniciar Procedimento: Medicamento</button></li>
+                    <li><button class="btn-acao">Iniciar Procedimento: Coleta de Urina</button></li>
+                    <li><button class="btn-acao">Iniciar Procedimento: Curativo</button></li>
+                </ul>
+            </section>
+        </div>
+    </div>
+</body>
+</html>

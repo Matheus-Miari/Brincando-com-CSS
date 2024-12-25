@@ -1,0 +1,87 @@
+body {
+    background-color: #000;
+    color: white;
+    width: 100%; /* Isso garante que o body ocupe toda a largura */
+    height: 100%; /* Para garantir que ele ocupe toda a altura também */
+    margin: 0;
+    font-family: "Nunito", serif;
+}
+.header_main{
+    display: flex;
+    flex-direction: row;
+}
+.header_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li{
+    list-style: none;
+    margin-right: 42px;
+}
+
+.menu, .options{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.options img{
+
+}
+
+
+.btn_comprar{
+    font-family: "Nunito", serif;
+    padding: 9px 16px;
+    border-radius: 8px;
+    margin-right: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.hero-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 52px;
+}
+
+.img-phone{
+    width: 737.45px;
+    height: 925.69px;
+}
+.hero-banner p{
+    color: grey;
+    font-weight: 400;
+    font-size: 25px;
+}
+.hero-banner h1{
+    font-size: 60px;
+    width: 727px;
+    height: 210px;
+    font-weight: lighter;
+}
+
+.hero-banner a{
+    background: linear-gradient(to right, #1371EF, #E539A2);
+    padding: 13px 46px;
+    width: 173px;
+    height: 40px;
+    border-radius: 17px;
+    font-weight: regular;
+    font-size: 25px;
+}

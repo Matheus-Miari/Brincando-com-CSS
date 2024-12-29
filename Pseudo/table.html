@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: bisque;
+            margin-bottom: 24px;
+        }
+        table{
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td{
+            border-bottom: 1px solid #3e4403;
+            padding: .5em;
+        }
+        th,td{
+            text-align: center;
+        }
+        tr:nth-child(odd) {
+            background-color: #3e440357;
+        }
+        tr:hover{
+            background-color: #acbe0757;
+        }
+        tr:has(input[type="checkbox"]:checked){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Nome</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>John Doe</td>
+            <td>johndoe@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Jane Smith</td>
+            <td>janesmith@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Michael Johnson</td>
+            <td>michaeljohnson@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Sarah Williams</td>
+            <td>sarahwilliams@example.com</td>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>David Brown</td>
+            <td>davidbrown@example.com</td>
+        </tr>
+    </table>
+</body>
+</html>

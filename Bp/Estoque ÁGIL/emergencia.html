@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PA Estoque Inteligente - Emergência</title>
+    <link rel="stylesheet" href="emergencia.css">
+</head>
+<body>
+    <header class="header">
+        <h1>PA Estoque Inteligente - Emergência</h1>
+    </header>
+
+    <main class="main-container">
+        <section class="materials-grid">
+            <h2>Materiais Disponíveis</h2>
+            
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h3>Material 1</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material1" value="material1">
+                        Selecionar
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <h3>Material 2</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material2" value="material2">
+                        Selecionar
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <h3>Material 3</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material3" value="material3">
+                        Selecionar
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <h3>Material 4</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material4" value="material4">
+                        Selecionar
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <h3>Material 5</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material5" value="material5">
+                        Selecionar
+                    </label>
+                </div>
+                <div class="grid-item">
+                    <h3>Material 6</h3>
+                    <p>Descrição do material</p>
+                    <label>
+                        <input type="checkbox" name="material6" value="material6">
+                        Selecionar
+                    </label>
+                </div>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Preenchimento de Estoque</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="quantidade">Quantidade:</label>
+                    <input type="number" id="quantidade" name="quantidade" min="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="descricao">Descrição Adicional:</label>
+                    <textarea id="descricao" name="descricao" rows="4" placeholder="Descreva o que está sendo requisitado..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 PA Estoque Inteligente - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

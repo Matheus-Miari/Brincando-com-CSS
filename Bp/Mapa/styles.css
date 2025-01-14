@@ -41,17 +41,18 @@ body {
 }
 
 .sector {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #FFFFFF; /* Background branco para os cards */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #000000; /* Texto preto para contraste */
 }
 
 .sector:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 .sector h3 {
@@ -70,4 +71,17 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
-    cursor: p
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.view-details:hover {
+    background-color: #473A8D;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+}

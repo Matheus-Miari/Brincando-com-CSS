@@ -1,0 +1,99 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FF0000, #473A8D);
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Container principal */
+.main-container {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Painel de medicamentos */
+.medication-panel {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.medication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.med-card {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.med-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Painel de curiosidades */
+.curiosity-panel {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.curiosity-slider {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000000;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    animation: slide 15s linear infinite;
+}
+
+.curiosity-slider p {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-right: 40px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 0.9rem;
+}

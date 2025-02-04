@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão Sim ou Não</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        #nao {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <h2>Você gosta deste site?</h2>
+    <div class="container">
+        <button onclick="alert('Ótimo! 😊')">Sim</button>
+        <button id="nao" onclick="respostaErrada()">Não</button>
+    </div>
+
+    <script>
+        let primeiroClique = true;
+        function respostaErrada() {
+            let botao = document.getElementById("nao");
+            if (primeiroClique) {
+                botao.style.backgroundColor = "red";
+                primeiroClique = false;
+                alert('RESPOSTA ERRADA!');
+            } else {
+                let tamanhoAtual = parseFloat(window.getComputedStyle(botao).fontSize);
+                if (tamanhoAtual > 5) {
+                    botao.style.fontSize = (tamanhoAtual - 2) + "px";
+                    botao.style.padding = (tamanhoAtual - 10) + "px";
+                } else {
+                    botao.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
